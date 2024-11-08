@@ -1,4 +1,4 @@
-# Jogo da Velha
+# Jogo da Velha.
 
 Este é um simples jogo da velha (ou "tic-tac-toe") implementado em Python. O jogo pode ser jogado entre um jogador humano e um computador, ou entre dois jogadores humanos.
 
