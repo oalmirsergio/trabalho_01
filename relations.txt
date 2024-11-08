@@ -1,0 +1,41 @@
+# Relations.txt
+
+# Classes
+1. Tabuleiro
+   - Métodos:
+     - __init__: Inicializa um tabuleiro 3x3 vazio.
+     - pegar_tabuleiro: Retorna o estado atual do tabuleiro (list 2D).
+     - marcar_casa: Marca uma casa no tabuleiro com o símbolo do jogador.
+     - imprimir_tabuleiro: Imprime o tabuleiro formatado na tela.
+
+2. Jogador (Abstract Class)
+   - Métodos:
+     - __init__: Inicializa um jogador com símbolo e nome.
+     - fazer_jogada: Método abstrato a ser implementado pelas subclasses.
+
+3. JogadorHumano (extends Jogador)
+   - Métodos:
+     - fazer_jogada: Pede ao jogador humano para fazer uma jogada no tabuleiro.
+
+4. JogadorComputador (extends Jogador)
+   - Métodos:
+     - __init__: Inicializa um jogador computador com símbolo, nome e estratégia.
+     - fazer_jogada: Faz uma jogada no tabuleiro baseado na estratégia definida.
+     - jogada_aleatoria: Realiza uma jogada aleatória no tabuleiro.
+
+5. JogoVelha
+   - Métodos:
+     - __init__: Inicializa o jogo da velha com dois jogadores.
+     - jogador_atual: Retorna o jogador que está atualmente jogando.
+     - alternar_turno: Alterna o turno entre os jogadores.
+     - verificar_vitoria: Verifica se o jogador com o símbolo especificado venceu.
+     - tabuleiro_cheio: Verifica se o tabuleiro está cheio.
+     - jogar: Inicia o loop principal do jogo, alternando turnos e verificando vitórias.
+
+# Relações entre classes
+- JogoVelha contém:
+  - Uma instância de Tabuleiro.
+  - Duas instâncias de Jogador (JogadorHumano ou JogadorComputador).
+
+- JogadorComputador e JogadorHumano estendem Jogador e implementam o método fazer_jogada.
+- Jogador é uma classe abstrata e não pode ser instanciada diretamente.

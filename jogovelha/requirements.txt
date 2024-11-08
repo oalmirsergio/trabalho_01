@@ -1,0 +1,2 @@
+tabulate
+pip install -r requirements.txt
