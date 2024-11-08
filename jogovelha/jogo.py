@@ -1,3 +1,5 @@
+# Importando bibliotecas
+
 import random
 import tabulate
 from abc import ABC, abstractmethod
