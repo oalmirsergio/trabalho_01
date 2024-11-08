@@ -1,6 +1,7 @@
 # Relations.txt
 
 # Classes
+
 1. Tabuleiro
    - Métodos:
      - __init__: Inicializa um tabuleiro 3x3 vazio.
