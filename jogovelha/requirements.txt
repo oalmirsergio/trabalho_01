@@ -1,2 +1,4 @@
+# necessário para o código funcionar
+
 tabulate
 pip install -r requirements.txt
